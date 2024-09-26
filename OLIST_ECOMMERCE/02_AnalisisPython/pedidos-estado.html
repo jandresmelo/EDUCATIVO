@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5bbcf53a19875989008b6d7e5d0fff06 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5bbcf53a19875989008b6d7e5d0fff06" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5bbcf53a19875989008b6d7e5d0fff06 = L.map(
+                "map_5bbcf53a19875989008b6d7e5d0fff06",
+                {
+                    center: [-14.235, -51.9253],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e741117c02dc3d542521398e7b6b06c6 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_e741117c02dc3d542521398e7b6b06c6.addTo(map_5bbcf53a19875989008b6d7e5d0fff06);
+        
+    
+            var marker_e1ed8c694cefaa870229a59fbe742f8f = L.marker(
+                [-23.572600205087557, -46.63386124641384],
+                {}
+            ).addTo(map_5bbcf53a19875989008b6d7e5d0fff06);
+        
+    
+            var icon_994a336d5d5cc333dd3fd6378f5b0a88 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e1ed8c694cefaa870229a59fbe742f8f.setIcon(icon_994a336d5d5cc333dd3fd6378f5b0a88);
+        
+    
+        var popup_1cab13a2176763bf45a4ddf56f947929 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa5baa5fdaab0b0a8690eb02ab9cfc1c = $(`<div id="html_fa5baa5fdaab0b0a8690eb02ab9cfc1c" style="width: 100.0%; height: 100.0%;">Ciudad: sao paulo, Pedidos: 15538</div>`)[0];
+                popup_1cab13a2176763bf45a4ddf56f947929.setContent(html_fa5baa5fdaab0b0a8690eb02ab9cfc1c);
+            
+        
+
+        marker_e1ed8c694cefaa870229a59fbe742f8f.bindPopup(popup_1cab13a2176763bf45a4ddf56f947929)
+        ;
+
+        
+    
+    
+            var marker_d133d95a71ecef11615b481e577107d6 = L.marker(
+                [-22.923369899892684, -43.3281306186767],
+                {}
+            ).addTo(map_5bbcf53a19875989008b6d7e5d0fff06);
+        
+    
+            var icon_dd79fffd0d4c862d1cb80dd2b29115ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d133d95a71ecef11615b481e577107d6.setIcon(icon_dd79fffd0d4c862d1cb80dd2b29115ed);
+        
+    
+        var popup_631cc9b25ced1449f48d1ebed5f9f01e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db2f95dbff28f365cf00b0e48253fd59 = $(`<div id="html_db2f95dbff28f365cf00b0e48253fd59" style="width: 100.0%; height: 100.0%;">Ciudad: rio de janeiro, Pedidos: 6882</div>`)[0];
+                popup_631cc9b25ced1449f48d1ebed5f9f01e.setContent(html_db2f95dbff28f365cf00b0e48253fd59);
+            
+        
+
+        marker_d133d95a71ecef11615b481e577107d6.bindPopup(popup_631cc9b25ced1449f48d1ebed5f9f01e)
+        ;
+
+        
+    
+    
+            var marker_19056acb2949d041c9f319c7966f8c28 = L.marker(
+                [-19.91093557744607, -43.958786076275615],
+                {}
+            ).addTo(map_5bbcf53a19875989008b6d7e5d0fff06);
+        
+    
+            var icon_f1d17901abcbace5d48ad0ae6a6f9b27 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_19056acb2949d041c9f319c7966f8c28.setIcon(icon_f1d17901abcbace5d48ad0ae6a6f9b27);
+        
+    
+        var popup_16d83f3112e1e96686c6ab6d92250d85 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6c42fc8c4ed6e6cc4811c147a6503c40 = $(`<div id="html_6c42fc8c4ed6e6cc4811c147a6503c40" style="width: 100.0%; height: 100.0%;">Ciudad: belo horizonte, Pedidos: 2773</div>`)[0];
+                popup_16d83f3112e1e96686c6ab6d92250d85.setContent(html_6c42fc8c4ed6e6cc4811c147a6503c40);
+            
+        
+
+        marker_19056acb2949d041c9f319c7966f8c28.bindPopup(popup_16d83f3112e1e96686c6ab6d92250d85)
+        ;
+
+        
+    
+    
+            var marker_39173b1bddf98e12d825840c46e4ba39 = L.marker(
+                [-15.81428359048149, -47.960271744729354],
+                {}
+            ).addTo(map_5bbcf53a19875989008b6d7e5d0fff06);
+        
+    
+            var icon_77508806c3283410bf3cd056b2338e83 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_39173b1bddf98e12d825840c46e4ba39.setIcon(icon_77508806c3283410bf3cd056b2338e83);
+        
+    
+        var popup_73e6e8e3b9d94511c298f12f0b35ca22 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa66477c4557ab7439eceffa67691718 = $(`<div id="html_fa66477c4557ab7439eceffa67691718" style="width: 100.0%; height: 100.0%;">Ciudad: brasilia, Pedidos: 1960</div>`)[0];
+                popup_73e6e8e3b9d94511c298f12f0b35ca22.setContent(html_fa66477c4557ab7439eceffa67691718);
+            
+        
+
+        marker_39173b1bddf98e12d825840c46e4ba39.bindPopup(popup_73e6e8e3b9d94511c298f12f0b35ca22)
+        ;
+
+        
+    
+    
+            var marker_8ee257875ad4c2c7bb9d3f8846e4d81c = L.marker(
+                [-25.454795639383, -49.27550848895698],
+                {}
+            ).addTo(map_5bbcf53a19875989008b6d7e5d0fff06);
+        
+    
+            var icon_e16a8858d77034ed6a56e1b5c5a035c1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8ee257875ad4c2c7bb9d3f8846e4d81c.setIcon(icon_e16a8858d77034ed6a56e1b5c5a035c1);
+        
+    
+        var popup_241be2be24c5ee4d708c02d1187a6b12 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1c176437e335658708f1b99e5aa779cd = $(`<div id="html_1c176437e335658708f1b99e5aa779cd" style="width: 100.0%; height: 100.0%;">Ciudad: curitiba, Pedidos: 1521</div>`)[0];
+                popup_241be2be24c5ee4d708c02d1187a6b12.setContent(html_1c176437e335658708f1b99e5aa779cd);
+            
+        
+
+        marker_8ee257875ad4c2c7bb9d3f8846e4d81c.bindPopup(popup_241be2be24c5ee4d708c02d1187a6b12)
+        ;
+
+        
+    
+    
+            var marker_cb32f839dc233a77b915f435335694c9 = L.marker(
+                [-22.905752715020064, -47.078761725657415],
+                {}
+            ).addTo(map_5bbcf53a19875989008b6d7e5d0fff06);
+        
+    
+            var icon_815b4e6b7891a12017de6d07a671f6e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cb32f839dc233a77b915f435335694c9.setIcon(icon_815b4e6b7891a12017de6d07a671f6e5);
+        
+    
+        var popup_efa2a78250216485b60f2d45e57a4043 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d2393cafba98966506fe633a95ac526a = $(`<div id="html_d2393cafba98966506fe633a95ac526a" style="width: 100.0%; height: 100.0%;">Ciudad: campinas, Pedidos: 1444</div>`)[0];
+                popup_efa2a78250216485b60f2d45e57a4043.setContent(html_d2393cafba98966506fe633a95ac526a);
+            
+        
+
+        marker_cb32f839dc233a77b915f435335694c9.bindPopup(popup_efa2a78250216485b60f2d45e57a4043)
+        ;
+
+        
+    
+    
+            var marker_8a713ee9e8a7131e8f06a6d35a317bfa = L.marker(
+                [-30.050911403771856, -51.18654913554938],
+                {}
+            ).addTo(map_5bbcf53a19875989008b6d7e5d0fff06);
+        
+    
+            var icon_c64f0d8160e240e066d19602561ecfcb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8a713ee9e8a7131e8f06a6d35a317bfa.setIcon(icon_c64f0d8160e240e066d19602561ecfcb);
+        
+    
+        var popup_2c88d469e59d18a33a776eb6d0db5099 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fbf084190a565be4aef56dcf5bd973e8 = $(`<div id="html_fbf084190a565be4aef56dcf5bd973e8" style="width: 100.0%; height: 100.0%;">Ciudad: porto alegre, Pedidos: 1379</div>`)[0];
+                popup_2c88d469e59d18a33a776eb6d0db5099.setContent(html_fbf084190a565be4aef56dcf5bd973e8);
+            
+        
+
+        marker_8a713ee9e8a7131e8f06a6d35a317bfa.bindPopup(popup_2c88d469e59d18a33a776eb6d0db5099)
+        ;
+
+        
+    
+    
+            var marker_bf4a621c74e599d6f0a8f4155f94577c = L.marker(
+                [-12.960261921717809, -38.45940343628213],
+                {}
+            ).addTo(map_5bbcf53a19875989008b6d7e5d0fff06);
+        
+    
+            var icon_9d9b07021f815cb8c960c7951d6cf9e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_bf4a621c74e599d6f0a8f4155f94577c.setIcon(icon_9d9b07021f815cb8c960c7951d6cf9e1);
+        
+    
+        var popup_2f5a803c8ff04e1aefd8a138ef4873a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_44553ed65e68f36bc1e19720b5aeb9bf = $(`<div id="html_44553ed65e68f36bc1e19720b5aeb9bf" style="width: 100.0%; height: 100.0%;">Ciudad: salvador, Pedidos: 1241</div>`)[0];
+                popup_2f5a803c8ff04e1aefd8a138ef4873a6.setContent(html_44553ed65e68f36bc1e19720b5aeb9bf);
+            
+        
+
+        marker_bf4a621c74e599d6f0a8f4155f94577c.bindPopup(popup_2f5a803c8ff04e1aefd8a138ef4873a6)
+        ;
+
+        
+    
+    
+            var marker_f90a50a6673a16bb826ccec294824acc = L.marker(
+                [-23.444548096213733, -46.49877967695839],
+                {}
+            ).addTo(map_5bbcf53a19875989008b6d7e5d0fff06);
+        
+    
+            var icon_c2e484453feba258f1675a21f97cec09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f90a50a6673a16bb826ccec294824acc.setIcon(icon_c2e484453feba258f1675a21f97cec09);
+        
+    
+        var popup_cb1c6f918ce6d7218828275054cc7f85 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8b71ba47d071711e223f65eba49726d = $(`<div id="html_c8b71ba47d071711e223f65eba49726d" style="width: 100.0%; height: 100.0%;">Ciudad: guarulhos, Pedidos: 1189</div>`)[0];
+                popup_cb1c6f918ce6d7218828275054cc7f85.setContent(html_c8b71ba47d071711e223f65eba49726d);
+            
+        
+
+        marker_f90a50a6673a16bb826ccec294824acc.bindPopup(popup_cb1c6f918ce6d7218828275054cc7f85)
+        ;
+
+        
+    
+</script>
+</html>
