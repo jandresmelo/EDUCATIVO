@@ -6,7 +6,7 @@ URL: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce.
 
 ## Contenido
 
-- [Base de datos postgres: Almacena los datos estructuradamente para su posterior análisis.](#características-del-proyecto)
+- [Base de datos postgres: Almacena los datos estructuradamente para su posterior análisis.](#OLIST_ECOMMERCE/01_BaseDatosSQL)
 - [Analisis descriptivo de los datos, realizado en PostgreSQL GIS y Python.](#características-del-proyecto)
 - [Regresion lineal y Logistica.](#características-del-proyecto)
 - [Dashboard interactivo desarrollado en Python utilizando Streamlit.](#características-del-proyecto)
