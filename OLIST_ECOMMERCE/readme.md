@@ -6,11 +6,31 @@ URL: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce.
 
 ## Contenido
 
-- [Base de datos postgres: Almacena los datos estructuradamente para su posterior análisis.](#OLIST_ECOMMERCE/01_BaseDatosSQL)
-- [Analisis descriptivo de los datos, realizado en PostgreSQL GIS y Python.](#características-del-proyecto)
-- [Regresion lineal y Logistica.](#características-del-proyecto)
-- [Dashboard interactivo desarrollado en Python utilizando Streamlit.](#características-del-proyecto)
-  
+El proyecto está organizado en las siguientes secciones, cada una de ellas alojada en un subdirectorio específico dentro del repositorio:
+
+1. **Datos descargados**:  
+   Contiene los datasets originales utilizados en el proyecto. Esta sección almacena los datos sin procesar tal como fueron descargados desde la fuente.  
+   Ubicación: `OLIST_ECOMMERCE/00_DatosDescargados`
+
+2. **Base de datos PostgreSQL**:  
+   Almacena los datos estructuradamente para su posterior análisis. Incluye la configuración de la base de datos PostgreSQL con extensiones GIS para manejar datos geoespaciales y realizar consultas complejas.  
+   Ubicación: `OLIST_ECOMMERCE/01_BaseDatosSQL`
+
+3. **Análisis descriptivo de los datos**:  
+   Contiene los scripts y notebooks que realizan el análisis exploratorio y descriptivo de los datos, utilizando tanto PostgreSQL GIS como Python. Esta sección incluye visualizaciones, estadísticas descriptivas y mapas geoespaciales.  
+   Ubicación: `OLIST_ECOMMERCE/02_AnalisisPython`
+
+4. **Regresión lineal y logística**:  
+   Desarrolla los modelos de regresión lineal y logística para predecir diferentes variables de interés. Incluye la implementación de los modelos, la evaluación del rendimiento y la interpretación de los resultados.  
+   Ubicación: `OLIST_ECOMMERCE/03_Regresión`
+
+5. **Dashboard interactivo**:  
+   Un dashboard interactivo desarrollado en Python utilizando Streamlit. Este dashboard permite a los usuarios explorar los datos de manera dinámica y visualizar los principales resultados del análisis.  
+   Ubicación: `OLIST_ECOMMERCE/04_Dashboard`
+
+6. **Documento del proyecto**:  
+   Proporciona una descripción detallada del proyecto, incluyendo el objetivo, metodología, resultados y conclusiones. Este documento sirve como una guía completa para entender el desarrollo y los hallazgos del proyecto.  
+   Ubicación: `OLIST_ECOMMERCE/05_Documento`
 
 ## Características del Proyecto
 
