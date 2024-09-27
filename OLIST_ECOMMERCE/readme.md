@@ -4,6 +4,23 @@ Este proyecto consiste en realizar el analisis y visualización de resultados de
 Fuente: Brazilian E-Commerce Public Dataset by Olist 
 URL: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce.
 
+Conjunto de datos públicos de comercio electrónico brasileño de pedidos realizados en Olist Store. El conjunto de datos tiene información de 100 000 pedidos de 2016 a 2018 realizados en varios mercados de Brasil. Sus características permiten ver un pedido desde múltiples dimensiones: desde el estado del pedido, el precio, el pago y el rendimiento del flete hasta la ubicación del cliente, los atributos del producto y, finalmente, las reseñas escritas por los clientes. También publicamos un conjunto de datos de geolocalización que relaciona los códigos postales brasileños con las coordenadas de latitud y longitud. Se trata de datos comerciales reales, que han sido anonimizados y las referencias a las empresas y socios en el texto de la reseña han sido sustituidas por los nombres de las grandes casas de Juego de Tronos.
+
+## Objetivos
+
+Comprender cómo los factores geoespaciales, los tiempos de entrega y los costos de envío se relacionan con los retrasos, con el fin de optimizar la logística y mejorar la eficiencia en las entregas. Para lograrlo, me enfocaré en los siguientes aspectos:
+
+   A. **Identificar los tiempos de entrega**: relación con los costos asociados en diferentes regiones para detectar áreas geográficas          específicas donde los retrasos son más frecuentes.
+   
+   B. **Utilizar modelos de regresión**: Analizar cómo variables como la distancia, el costo de envío y los métodos de transporte                afectan los tiempos de entrega. Esto me permitirá cuantificar la influencia de cada factor y priorizar las acciones de mejora.
+   
+   C. **Examinar la variabilidad en los tiempos de entrega**: En función de factores como los días de la semana, las horas pico y las          condiciones meteorológicas. Esta información será crucial para mejorar la planificación logística.
+   
+   D. **Evaluar el impacto de los costos de envío**: en los tiempos de entrega y en la satisfacción del cliente. Esto me ayudará a             determinar si es necesario ajustar las tarifas o renegociar acuerdos con proveedores logísticos.
+   
+   E. **Dashboard**: para visualizar el resultado del analisis obtenido 
+
+
 ## Contenido
 
 El proyecto está organizado en las siguientes secciones, cada una de ellas alojada en un subdirectorio específico dentro del repositorio:
