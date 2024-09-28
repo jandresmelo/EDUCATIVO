@@ -43,6 +43,19 @@ st.write("""
 st.header("Estados Ubicación Clientes")
 st.write("Visualización de estados donde existen clientes.")
 
+# URL del archivo HTML en GitHub
+url_html = "https://github.com/jandresmelo/EDUCATIVO/blob/main/OLIST_ECOMMERCE/04_Dashboard/ubicacion_generalizada.html"
+
+# Cargar el archivo HTML desde la URL
+try:
+    response = requests.get(url_html)
+    response.raise_for_status()  # Check if the request was successful
+    html_content = response.text
+
+    # Mostrar el mapa en el dashboard
+    components.html(html_content, height=600)
+
+'''
 # Cargar el archivo HTML del mapa
 try:
     with open("ubicacion_generalizada.html", "r", encoding="utf-8") as f:
@@ -50,7 +63,7 @@ try:
 
     # Mostrar el mapa en el dashboard
     components.html(html_content, height=600)
-
+'''
 # Descripción del gráfico
     st.write("""
         El mapa se contruye con una imagen del OpenStreetMap, representa la ubicación geográfica de los estados en Brasil donde existen 
