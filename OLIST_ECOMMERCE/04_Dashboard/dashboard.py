@@ -13,7 +13,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error, r2_score
 import scipy.stats as stats
 import streamlit as st
-import streamlit.components.v1 as components  # Asegúrate de importar esto
+import streamlit.components.v1 as components
 
 # Configuración de la conexión a la base de datos
 db_config = {
