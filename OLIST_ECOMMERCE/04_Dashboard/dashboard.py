@@ -70,7 +70,7 @@ except Exception as e:
     st.error(f"Error al cargar el mapa desde GitHub: {e}")
 
 # Código comentado para cargar desde archivo local (opcional, si ya no se usará, puedes eliminarlo)
-'''
+"""
 # Cargar el archivo HTML del mapa
 try:
     with open("ubicacion_generalizada.html", "r", encoding="utf-8") as f:
@@ -78,29 +78,48 @@ try:
 
     # Mostrar el mapa en el dashboard
     components.html(html_content, height=600)
-'''
+"""
 
 
-# Sección 2: Mapa DUbicación de Clientes
+import requests
+import streamlit.components.v1 as components
+
+# Sección 2: Mapa de Calor - Ubicación Clientes
 st.header("Mapa de calor - Ubicación Clientes")
-st.write(" Ubicación de clientes en Brasil. Los colores varían desde tonos de azul, verde y amarillo, indicando las áreas con diferentes concentraciones de clientes.")
+st.write("Ubicación de clientes en Brasil. Los colores varían desde tonos de azul, verde y amarillo, indicando las áreas con diferentes concentraciones de clientes.")
 
-# Cargar el archivo HTML del mapa
+# URL del archivo HTML en GitHub (versión raw)
+url_html = "https://raw.githubusercontent.com/jandresmelo/EDUCATIVO/main/OLIST_ECOMMERCE/04_Dashboard/clientes_estado_heatmap.html"
+
+# Cargar el archivo HTML desde la URL
+try:
+    response = requests.get(url_html)
+    response.raise_for_status()  # Verifica si la solicitud fue exitosa
+    html_content = response.text
+
+    # Mostrar el mapa en el dashboard
+    components.html(html_content, height=600)
+
+    # Añadir la descripción del gráfico
+    st.write("""
+        El mapa se construye con una imagen del OpenStreetMap, la cual incluye detalles geográficos como ciudades, carreteras y áreas protegidas.
+        El color Verdes/Amarillo indica una alta concentración de clientes en esa ubicación específica. Estos son los puntos de mayor densidad, donde se observa la mayor actividad de clientes.
+        El color Azul indica una menor concentración de clientes, pero aún así significativa; estas zonas tienen menos actividad en comparación con las áreas más cálidas.
+    """)
+
+except Exception as e:
+    st.error(f"Error al cargar el mapa desde GitHub: {e}")
+
+# Código comentado para cargar desde archivo local (opcional)
+"""
+# Cargar el archivo HTML del mapa desde un archivo local
 try:
     with open("clientes_estado_heatmap.html", "r", encoding="utf-8") as f:
         html_content = f.read()
 
     # Mostrar el mapa en el dashboard
     components.html(html_content, height=600)
-
-# Añadir la descripción del gráfico
-    st.write("""
-        El mapa se contruye con una imagen del OpenStreetMap, la cual incluyendo detalles geográficos como ciudades, carreteras y áreas protegidas.
-        El color Verdes/Amarillo: Indican una alta concentración de clientes en esa ubicación específica. Estos son los puntos de mayor densidad, donde se observa la mayor actividad de clientes.
-        El color Azul: Indican una menor concentración de clientes, pero aún así significativa, estas zonas tienen menos actividad en comparación con las áreas más cálidas.
-             """)
-except Exception as e:
-    st.error(f"Error al cargar el mapa: {e}")
+"""
 
 # Sección 3: Análisis de Clientes por Estado
 st.header("Número de Clientes por Estado")
