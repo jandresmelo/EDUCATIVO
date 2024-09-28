@@ -44,8 +44,9 @@ El proyecto está organizado en las siguientes secciones, cada una de ellas aloj
 5. **Dashboard interactivo**:  
    Un dashboard interactivo desarrollado en Python utilizando Streamlit. Este dashboard permite a los usuarios explorar los datos de manera dinámica y visualizar los principales resultados del análisis.  
    Ubicación: `OLIST_ECOMMERCE/04_Dashboard`
+   ([https://04dashboard-np8bd54frbtmwjvoug2qjz.streamlit.app/])
 
-6. **Documento del proyecto**:  
+7. **Documento del proyecto**:  
    Proporciona una descripción detallada del proyecto, incluyendo el objetivo, metodología, resultados y conclusiones. Este documento sirve como una guía completa para entender el desarrollo y los hallazgos del proyecto.  
    Ubicación: `OLIST_ECOMMERCE/05_Documento`
 
@@ -84,7 +85,8 @@ C. ** Analisis y Regresión **:
     Archivos ipynb cuadernos jupyter para visualizar en Jupyter Anaconda, Visual Studio, etc.
 
 D. **Ejecución del Dashboard **:
-Para ejecutar el dashboard, asegúrate de estar en el directorio del proyecto y ejecutar el script de Streamlit (`dashboard.py`). Esto lanzará el dashboard en tu navegador web predeterminado.
+Para ejecutar el dashboard, asegúrate de estar en el directorio del proyecto y ejecutar el script de Streamlit (`dashboard.py`). Esto lanzará el dashboard en tu navegador web predeterminado. Puede acceder a travez de la nube en la dirección 
+(https://04dashboard-np8bd54frbtmwjvoug2qjz.streamlit.app/)
 
 ## Descripción de las Secciones
 
