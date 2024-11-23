@@ -18,22 +18,12 @@ import streamlit.components.v1 as components
 # Configuración de la conexión a la base de datos
 
 db_config = {
-    'dbname': 'postgres',  
-    'user': 'postgres.sklbyfbvuozbnaoafade',  
-    'password': 'TD5ska3b2!8.Q3u',  
-    'host': 'aws-0-sa-east-1.pooler.supabase.com',  
-    'port': '6543'
-}
-
-"""
-db_config = {
     'dbname': 'olist_ecommerce',
     'user': 'postgres',
     'password': 'postgres',
     'host': 'localhost',
     'port': '5432'
 }
-"""
 
 # Título del Dashboard
 st.title("Resultados Analisis de Datos BD Olist E-commerce")
